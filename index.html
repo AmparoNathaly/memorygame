@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de memoria</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+        <main>
+            <h1>
+                Bienvenido
+            </h1>
+            <hr>
+            <p class="welcome-note">
+                ¡Despierta tu memoria y diviértete jugando! ¿Aceptas el reto?
+            </p>
+            <br>
+            <div class="dropdown">
+                <button 
+                onclick="toggleDropdown()">Elige Nivel</button>
+                <div class="dropdown-content" id="dropdown-menu">
+                    <a href="level8.html" onclick="selectLevel('Básico')">Básico</a>
+                    <a href="level10.html" onclick="selectLevel('Medio')">Medio</a>
+                    <a href="level12.html" onclick="selectLevel('Experto')">Experto</a>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <small>
+                Desarrollado por Nathaly Ocaña. &copy;2024. Todos los derechos reservados.
+            </small>
+        </footer>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
