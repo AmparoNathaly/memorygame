@@ -9,15 +9,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: solid 1px blue; /* provisional */
 }
 
 #images-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
+    width: 70%;
     padding: 10px;
     box-sizing: border-box;
+    border: solid 1px blue; /* provisional */
 }
 
 .memory-card {
@@ -31,25 +33,12 @@ body {
     cursor: pointer;
     position: relative;
 }
-@media (min-width: 1000px) {
-    #images-container {
-    width: 50%;
-}
-}
 
-/* @media (max-width: 768px) {
-    .memory-card {
-        width: calc(33.33% - 10px);
-        aspect-ratio: 1 / 1;
+@media (min-width: 800px){
+    #imeges-container {
+        height: 60%;        
     }
 }
-
-@media (max-width: 480px) {
-    .memory-card {
-        width: calc(50% - 10px);
-        aspect-ratio: 1 / 1;
-    }
-} */
 
 .memory-card img {
     width: 100%;
